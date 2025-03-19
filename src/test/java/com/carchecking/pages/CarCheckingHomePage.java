@@ -28,7 +28,7 @@ public class CarCheckingHomePage extends TestBase {
     @FindBy(xpath = "//a[@href='/home']")
     private WebElement homeLink;
 
-    @FindBy(xpath = "//div[contains(@class, 'alert-danger')]")
+    @FindBy(className = "alert-danger")
     private WebElement alertMessage;
 
 
