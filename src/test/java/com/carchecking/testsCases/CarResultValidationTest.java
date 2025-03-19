@@ -3,6 +3,7 @@ package com.carchecking.testsCases;
 import com.carchecking.base.TestBase;
 import com.carchecking.pages.CarCheckingHomePage;
 import data.RegNumberDataProvider;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -58,17 +59,22 @@ public class CarResultValidationTest extends TestBase {
         carCheckingHomePage.enterRegNumber(regNumber);
         carCheckingHomePage.clickCheckNowButton();
 
-        // Verify if the search result is displayed
-        if (carCheckingHomePage.isSearchResultDisplayed()) {
-            Assert.assertTrue(true, "Search result displayed for: " + regNumber);
-            carCheckingHomePage.clickHomePageLink(); // Navigate back to the home page
-        } else {
-            logger.info("Search result is NOT displayed for: " + regNumber);
+        // Check if search results are displayed using findElements to avoid NoSuchElementException
+        boolean isSearchable = !driver.findElements(By.xpath("//div[@id='content']//div[contains(@class, 'content-holder')]//div[contains(@class, 'report-header')]")).isEmpty();
+
+        if (!isSearchable) {
+            logger.warn("Search result is NOT displayed for: " + regNumber);
+
             if (carCheckingHomePage.isAlertMessageDisplayed()) {
-                logger.info("You must wait a bit longer before generating a new report for " + regNumber);
-                Assert.assertTrue(false, "\"Search result is NOT displayed for " + regNumber);
-                Assert.fail("No result for registration number: " + regNumber);
+                logger.info("Rate limiting detected: Need to wait before generating a new report for " + regNumber);
+            } else {
+                logger.warn("No alert message found; possible unexpected issue.");
             }
+        } else {
+            carCheckingHomePage.clickHomePageLink(); // Navigate back to the home page
+            logger.info("Search successful, returning to home page.");
         }
+
+        Assert.assertTrue(isSearchable, "Search result is NOT displayed for " + regNumber);
     }
 }
