@@ -66,6 +66,7 @@ public class CarResultValidationTest extends TestBase {
             logger.info("Search result is NOT displayed for: " + regNumber);
             if (carCheckingHomePage.isAlertMessageDisplayed()) {
                 logger.info("You must wait a bit longer before generating a new report for " + regNumber);
+                Assert.assertTrue(false, "\"Search result is NOT displayed for " + regNumber);
                 Assert.fail("No result for registration number: " + regNumber);
             }
         }
