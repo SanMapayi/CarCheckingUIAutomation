@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CarCheckingUIAutomation
 Car Checking UI Automation test
 =======
+=======
+>>>>>>> e3b102e (Create README.md)
 Project Overview
 This project automates the process of checking car valuations using the car-checking website. The tests include validating the car registration numbers extracted from a text file, performing vehicle detail searches on the website, and comparing the results against expected outputs. The framework is built using TestNG and Selenium.
 
@@ -128,4 +131,7 @@ If you face any issues while running the tests, here are some common solutions:
 Issue with WebDriver: Ensure the browser is properly set in the config file and that the correct version of the browser is installed.
 Test Failures: Check the logs in the target/surefire-reports/ folder for more detailed error messages.
 TestNG Configuration: Verify your testng.xml file if running tests in a suite.
+<<<<<<< HEAD
+>>>>>>> e3b102e (Create README.md)
+=======
 >>>>>>> e3b102e (Create README.md)
