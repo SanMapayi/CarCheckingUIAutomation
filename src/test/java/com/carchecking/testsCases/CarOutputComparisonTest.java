@@ -4,6 +4,8 @@ import com.carchecking.base.TestBase;
 import com.carchecking.pages.CarCheckingHomePage;
 import com.carchecking.pages.CarOutputComparisonPage;
 import data.RegNumberDataProvider;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import utilities.CarInputAndOutputReader;
 
@@ -12,24 +14,42 @@ import java.util.List;
 import java.util.Map;
 
 public class CarOutputComparisonTest extends TestBase {
-    public final CarCheckingHomePage carCheckingHomePage = new CarCheckingHomePage();
-    public final CarOutputComparisonPage carOutputComparisonPage = new CarOutputComparisonPage();
+    private CarCheckingHomePage carCheckingHomePage;
+    private CarOutputComparisonPage carOutputComparisonPage;
+    private Map<String, List<String>> mapOfExpectedResultOutput;
 
-    private final Map<String, List<String>> mapOfExpectedResultOutput = CarInputAndOutputReader.getInstance.vehicleRegMakeModelYearFromOutputFile();
+    @BeforeMethod
+    public void setUp() {
+        // Reinitialize WebDriver for each test method
+        if (driver != null) {
+            driver.quit(); // Ensure the previous driver session is closed
+            driver = null; // Reset the driver to null
+        }
+        TestBase.initialize(); // Reinitialize the driver
+        carCheckingHomePage = new CarCheckingHomePage();
+        carOutputComparisonPage = new CarOutputComparisonPage();
+        mapOfExpectedResultOutput = CarInputAndOutputReader.getInstance.vehicleRegMakeModelYearFromOutputFile();
+    }
+
+    @AfterMethod
+    public void tearDown() {
+        // Quit WebDriver after each test method
+        if (driver != null) {
+            driver.quit();
+            driver = null; // Reset the driver to null
+        }
+    }
 
     @Test(dataProviderClass = RegNumberDataProvider.class, dataProvider = "carRegNumbersProvider",
             description = "TC001 - Fetch vehicle details from car valuation website and compare with expected output")
     public void testCompareCarValuationResults(String regNumber) throws IOException, InterruptedException {
-        CarCheckingHomePage carCheckingHomePage = new CarCheckingHomePage();
-        CarOutputComparisonPage carOutputComparisonPage = new CarOutputComparisonPage();
-
         logger.info("Starting test for vehicle registration: " + regNumber);
 
         // Ensure we are on the home page before starting
         driver.get(config.getUrl());
         logger.info("Navigated to home page");
 
-        // check if output file contains reg number from the input file
+        // Check if output file contains reg number from the input file
         carOutputComparisonPage.checkIfMapContainsKeys(regNumber, mapOfExpectedResultOutput);
 
         // Enter reg number & search
