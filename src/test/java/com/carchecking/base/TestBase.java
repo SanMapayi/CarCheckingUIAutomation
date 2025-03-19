@@ -37,8 +37,8 @@ public class TestBase {
     public void setup() {
         // Loging the setup process
         logger.info("Starting setup for class: " + this.getClass().getSimpleName());
-            // Initialize WebDriver from TestBase class
-            TestBase.initialize();
+        // Initialize WebDriver from TestBase class
+        TestBase.initialize();
 
     }
 
