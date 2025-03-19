@@ -10,7 +10,7 @@ import utilities.CarInputAndOutputReader;
 import java.io.IOException;
 import java.util.List;
 
-public class CarResultValuationTest extends TestBase {
+public class CarResultValidationTest extends TestBase {
 
     List<String> listOfExtractedRegNumbers;
 

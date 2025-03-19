@@ -3,6 +3,7 @@ package com.carchecking.behaviour;
 import com.carchecking.base.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class GetMethods extends TestBase {
@@ -41,7 +42,7 @@ public class GetMethods extends TestBase {
     }
 
     /**
-     * Retrieves the value for a specific detail (e.g., Make, Model, Year) based on the label.
+     * Retrieves the value for a specific detail (e.g., Make, Model, Year) based on the label using JavaScript.
      * Handles switching to the iframe before interacting with elements inside it.
      *
      * @param label The label text (e.g., "Make", "Model").
@@ -52,14 +53,21 @@ public class GetMethods extends TestBase {
             // Switch to the iframe containing the relevant elements
             switchToCarOutputIframe();
 
-            // Wait for the row containing the label to be visible
-            WebElement labelElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//td[contains(text(), '" + label + "')]")));
+            // Use JavaScript to retrieve the corresponding detail value by label
+            JavascriptExecutor js = (JavascriptExecutor) driver;
 
-            // Get the corresponding value from the next <td class="td-right"> element in the row
-            WebElement valueElement = labelElement.findElement(By.xpath("following-sibling::td[@class='td-right']"));
+            // JavaScript to find the label and get the value from the next td with class 'td-right'
+            String script = "return document.evaluate(\"//table//tr[td[contains(text(), '" + label + "')]]//td[@class='td-right']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.textContent;";
 
-            // Return the text of the value element
-            return getText(valueElement);
+            // Execute JavaScript and return the result
+            String value = (String) js.executeScript(script);
+
+            if (value != null && !value.isEmpty()) {
+                logger.info("Retrieved value for '{}' using JavaScript: {}", label, value);
+            } else {
+                logger.warn("No value found for '{}'", label);
+            }
+            return value != null ? value : "";
         } catch (Exception e) {
             logger.error("Failed to retrieve detail value for '{}': {}", label, e.getMessage());
             return "";

@@ -52,11 +52,8 @@ public class CarOutputComparisonTest extends TestBase {
 
         // Fetch actual values from website
         String actualMake = carOutputComparisonPage.getMake();
-        System.out.printf("Actual ----- +  " + actualMake);
         String actualModel = carOutputComparisonPage.getModel();
-        System.out.printf("Actual ----- +  " + actualModel);
         String actualYear = carOutputComparisonPage.getYear();
-        System.out.printf("Actual ----- +  " + actualYear);
 
         logger.info("Comparing expected vs. actual results:");
         logger.info("Make: Expected [{}] vs Actual [{}]", expectedMake, actualMake);
