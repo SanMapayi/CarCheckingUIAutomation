@@ -12,6 +12,8 @@ import java.util.List;
 import java.util.Map;
 
 public class CarOutputComparisonTest extends TestBase {
+    public final CarCheckingHomePage carCheckingHomePage = new CarCheckingHomePage();
+    public final CarOutputComparisonPage carOutputComparisonPage = new CarOutputComparisonPage();
 
     private final Map<String, List<String>> mapOfExpectedResultOutput = CarInputAndOutputReader.getInstance.vehicleRegMakeModelYearFromOutputFile();
 
@@ -27,22 +29,13 @@ public class CarOutputComparisonTest extends TestBase {
         driver.get(config.getUrl());
         logger.info("Navigated to home page");
 
-        if (!mapOfExpectedResultOutput.containsKey(regNumber)) {
-            logger.warn("Registration number not found in expected results: " + regNumber);
-            Assert.fail("Registration number missing in expected output: " + regNumber);
-        }
+        // check if output file contains reg number from the input file
+        carOutputComparisonPage.checkIfMapContainsKeys(regNumber, mapOfExpectedResultOutput);
 
         // Enter reg number & search
-        carCheckingHomePage.enterRegNumber(regNumber);
-        carCheckingHomePage.clickCheckNowButton();
-        logger.info("Clicked 'Check Now' for: " + regNumber);
-
-        if (!carCheckingHomePage.isSearchResultDisplayed()) {
-            logger.error("Search result not displayed for: " + regNumber);
-            Assert.fail("Search result not displayed for: " + regNumber);
-        }
-
-        logger.info("Search result displayed for: " + regNumber);
+        carOutputComparisonPage.enterRegAndSearchPage(
+                regNumber, carCheckingHomePage, carOutputComparisonPage
+        );
 
         // Fetch expected values
         List<String> expectedDetails = mapOfExpectedResultOutput.get(regNumber);
