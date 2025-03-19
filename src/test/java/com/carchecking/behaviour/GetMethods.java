@@ -76,7 +76,6 @@ public class GetMethods extends TestBase {
 
     /**
      * Switches to the iframe that contains the car output details.
-     * This assumes the iframe is the only one on the page or it's easily identifiable.
      */
     private void switchToCarOutputIframe() {
         try {

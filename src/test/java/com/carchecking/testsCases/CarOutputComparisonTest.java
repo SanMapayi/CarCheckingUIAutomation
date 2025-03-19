@@ -4,9 +4,9 @@ import com.carchecking.base.TestBase;
 import com.carchecking.pages.CarCheckingHomePage;
 import com.carchecking.pages.CarOutputComparisonPage;
 import data.RegNumberDataProvider;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.CarInputAndOutputReader;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
@@ -37,25 +37,14 @@ public class CarOutputComparisonTest extends TestBase {
                 regNumber, carCheckingHomePage, carOutputComparisonPage
         );
 
-        // Fetch expected values
+        // Fetch expected values from the output file
         List<String> expectedDetails = mapOfExpectedResultOutput.get(regNumber);
         String expectedMake = expectedDetails.get(0);
         String expectedModel = expectedDetails.get(1);
         String expectedYear = expectedDetails.get(2);
 
-        // Fetch actual values from website
-        String actualMake = carOutputComparisonPage.getMake();
-        String actualModel = carOutputComparisonPage.getModel();
-        String actualYear = carOutputComparisonPage.getYear();
-
-        logger.info("Comparing expected vs. actual results:");
-        logger.info("Make: Expected [{}] vs Actual [{}]", expectedMake, actualMake);
-        logger.info("Model: Expected [{}] vs Actual [{}]", expectedModel, actualModel);
-        logger.info("Year: Expected [{}] vs Actual [{}]", expectedYear, actualYear);
-
-        // Assertions
-        Assert.assertEquals(actualMake, expectedMake, "Make mismatch for " + regNumber);
-        Assert.assertEquals(actualModel, expectedModel, "Model mismatch for " + regNumber);
-        Assert.assertEquals(actualYear, expectedYear, "Year mismatch for " + regNumber);
+        // Fetching actual values from website using JS and asserting for make, model, and year
+        carOutputComparisonPage.fetchingExpectedValueAndValidationTest(carOutputComparisonPage, expectedMake,
+                expectedModel, expectedYear, regNumber);
     }
 }

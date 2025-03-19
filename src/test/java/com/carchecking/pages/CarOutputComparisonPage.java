@@ -63,4 +63,22 @@ public class CarOutputComparisonPage extends TestBase {
         logger.info("Search result displayed for: " + regNumber);
     }
 
+    public void fetchingExpectedValueAndValidationTest(CarOutputComparisonPage carOutputComparisonPage,
+                                                       String expectedMake, String expectedModel, String expectedYear, String regNumber) {
+        // Fetch actual values from website
+        String actualMake = carOutputComparisonPage.getMake();
+        String actualModel = carOutputComparisonPage.getModel();
+        String actualYear = carOutputComparisonPage.getYear();
+
+        logger.info("Comparing expected vs. actual results:");
+        logger.info("Make: Expected [{}] vs Actual [{}]", expectedMake, actualMake);
+        logger.info("Model: Expected [{}] vs Actual [{}]", expectedModel, actualModel);
+        logger.info("Year: Expected [{}] vs Actual [{}]", expectedYear, actualYear);
+
+        // Assertions
+        Assert.assertEquals(actualMake, expectedMake, "Make mismatch for " + regNumber);
+        Assert.assertEquals(actualModel, expectedModel, "Model mismatch for " + regNumber);
+        Assert.assertEquals(actualYear, expectedYear, "Year mismatch for " + regNumber);
+    }
+
 }
