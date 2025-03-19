@@ -1,27 +1,89 @@
-2025-03-19 10:57:00 [INFO] u.LoggerUtil - Configuration file loaded successfully.
-2025-03-19 10:57:00 [INFO] o.t.i.Utils - [TestNG] Running:
+2025-03-19 11:35:01 [INFO] u.LoggerUtil - Configuration file loaded successfully.
+2025-03-19 11:35:01 [INFO] o.t.i.Utils - [TestNG] Running:
   C:\Users\teema\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
 
-2025-03-19 10:57:00 [INFO] u.LoggerUtil - Starting setup for class: CarOutputComparisonTest
-2025-03-19 10:57:00 [INFO] u.LoggerUtil - Initializing WebDriver for browser: chrome
-2025-03-19 10:57:00 [INFO] i.g.b.w.WebDriverManager - Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
-2025-03-19 10:57:00 [INFO] i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\teema\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
-2025-03-19 10:57:03 [INFO] u.LoggerUtil - Starting test for vehicle registration: AD58 VNF
-2025-03-19 10:57:05 [INFO] u.LoggerUtil - Navigated to home page
-2025-03-19 10:57:05 [INFO] u.LoggerUtil - Entered value 'AD58 VNF' into 'enterRegNumber'
-2025-03-19 10:57:08 [INFO] u.LoggerUtil - Clicked on 'clickCheckNowButton'
-2025-03-19 10:57:08 [INFO] u.LoggerUtil - Clicked 'Check Now' for: AD58 VNF
-2025-03-19 10:57:09 [INFO] u.LoggerUtil - Search result displayed for: AD58 VNF
-2025-03-19 10:57:09 [INFO] u.LoggerUtil - Starting test for vehicle registration: BW57 BOW
-2025-03-19 10:57:10 [INFO] u.LoggerUtil - Navigated to home page
-2025-03-19 10:57:10 [WARN] u.LoggerUtil - Registration number not found in expected results: BW57 BOW
-2025-03-19 10:57:10 [INFO] u.LoggerUtil - Starting test for vehicle registration: KT17DLX
-2025-03-19 10:57:12 [INFO] u.LoggerUtil - Navigated to home page
-2025-03-19 10:57:12 [WARN] u.LoggerUtil - Registration number not found in expected results: KT17DLX
-2025-03-19 10:57:12 [INFO] u.LoggerUtil - Starting test for vehicle registration: SG18 HTN
-2025-03-19 10:57:13 [INFO] u.LoggerUtil - Navigated to home page
-2025-03-19 10:57:14 [INFO] u.LoggerUtil - Entered value 'SG18 HTN' into 'enterRegNumber'
-2025-03-19 10:57:17 [INFO] u.LoggerUtil - Clicked on 'clickCheckNowButton'
-2025-03-19 10:57:17 [INFO] u.LoggerUtil - Clicked 'Check Now' for: SG18 HTN
-2025-03-19 10:57:17 [INFO] u.LoggerUtil - Search result displayed for: SG18 HTN
-2025-03-19 10:57:17 [INFO] u.LoggerUtil - Ending teardown for class: CarOutputComparisonTest
+2025-03-19 11:35:02 [INFO] u.LoggerUtil - Starting setup for class: CarOutputComparisonTest
+2025-03-19 11:35:02 [INFO] u.LoggerUtil - Initializing WebDriver for browser: chrome
+2025-03-19 11:35:02 [INFO] i.g.b.w.WebDriverManager - Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-19 11:35:02 [INFO] i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\teema\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-19 11:35:05 [INFO] u.LoggerUtil - Starting test for vehicle registration: AD58 VNF
+2025-03-19 11:35:06 [INFO] u.LoggerUtil - Navigated to home page
+2025-03-19 11:35:06 [INFO] u.LoggerUtil - Entered value 'AD58 VNF' into 'enterRegNumber'
+2025-03-19 11:35:10 [INFO] u.LoggerUtil - Clicked on 'clickCheckNowButton'
+2025-03-19 11:35:10 [INFO] u.LoggerUtil - Clicked 'Check Now' for: AD58 VNF
+2025-03-19 11:35:10 [INFO] u.LoggerUtil - Search result displayed for: AD58 VNF
+2025-03-19 11:35:10 [ERROR] u.LoggerUtil - Failed to switch to iframe: no such frame
+  (Session info: chrome=134.0.6998.89)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [378eb516f5dc5992a97a077d225d448a, switchToFrame {id={element-6066-11e4-a52e-4f735466cecf=f.D446E96D0F85336DBB8D9561E22CFF17.d.0EA9CF8B179369335E5ECC4AB033AA3F.e.104}}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\teema\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65019}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65019/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 378eb516f5dc5992a97a077d225d448a
+2025-03-19 11:35:10 [INFO] u.LoggerUtil - Retrieved value for 'Make' using JavaScript: BMW
+2025-03-19 11:35:10 [ERROR] u.LoggerUtil - Failed to switch to iframe: no such frame
+  (Session info: chrome=134.0.6998.89)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [378eb516f5dc5992a97a077d225d448a, switchToFrame {id={element-6066-11e4-a52e-4f735466cecf=f.D446E96D0F85336DBB8D9561E22CFF17.d.0EA9CF8B179369335E5ECC4AB033AA3F.e.104}}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\teema\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65019}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65019/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 378eb516f5dc5992a97a077d225d448a
+2025-03-19 11:35:10 [INFO] u.LoggerUtil - Retrieved value for 'Model' using JavaScript: 120D M SPORT
+2025-03-19 11:35:10 [ERROR] u.LoggerUtil - Failed to switch to iframe: no such frame
+  (Session info: chrome=134.0.6998.89)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [378eb516f5dc5992a97a077d225d448a, switchToFrame {id={element-6066-11e4-a52e-4f735466cecf=f.D446E96D0F85336DBB8D9561E22CFF17.d.0EA9CF8B179369335E5ECC4AB033AA3F.e.104}}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\teema\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65019}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65019/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 378eb516f5dc5992a97a077d225d448a
+2025-03-19 11:35:10 [INFO] u.LoggerUtil - Retrieved value for 'Year' using JavaScript: 2008
+2025-03-19 11:35:10 [INFO] u.LoggerUtil - Comparing expected vs. actual results:
+2025-03-19 11:35:10 [INFO] u.LoggerUtil - Make: Expected [BMW] vs Actual [BMW]
+2025-03-19 11:35:10 [INFO] u.LoggerUtil - Model: Expected [120D M SPORT] vs Actual [120D M SPORT]
+2025-03-19 11:35:10 [INFO] u.LoggerUtil - Year: Expected [2008] vs Actual [2008]
+2025-03-19 11:35:10 [INFO] u.LoggerUtil - Starting test for vehicle registration: BW57 BOW
+2025-03-19 11:35:12 [INFO] u.LoggerUtil - Navigated to home page
+2025-03-19 11:35:12 [WARN] u.LoggerUtil - Registration number not found in expected results: BW57 BOW
+2025-03-19 11:35:12 [INFO] u.LoggerUtil - Starting test for vehicle registration: KT17DLX
+2025-03-19 11:35:13 [INFO] u.LoggerUtil - Navigated to home page
+2025-03-19 11:35:13 [WARN] u.LoggerUtil - Registration number not found in expected results: KT17DLX
+2025-03-19 11:35:13 [INFO] u.LoggerUtil - Starting test for vehicle registration: SG18 HTN
+2025-03-19 11:35:15 [INFO] u.LoggerUtil - Navigated to home page
+2025-03-19 11:35:15 [INFO] u.LoggerUtil - Entered value 'SG18 HTN' into 'enterRegNumber'
+2025-03-19 11:35:19 [INFO] u.LoggerUtil - Clicked on 'clickCheckNowButton'
+2025-03-19 11:35:19 [INFO] u.LoggerUtil - Clicked 'Check Now' for: SG18 HTN
+2025-03-19 11:35:19 [INFO] u.LoggerUtil - Search result displayed for: SG18 HTN
+2025-03-19 11:35:19 [ERROR] u.LoggerUtil - Failed to switch to iframe: no such frame
+  (Session info: chrome=134.0.6998.89)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [378eb516f5dc5992a97a077d225d448a, switchToFrame {id={element-6066-11e4-a52e-4f735466cecf=f.D446E96D0F85336DBB8D9561E22CFF17.d.73F95FA4D562B8D89C5CE4CE7624FBB8.e.207}}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\teema\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65019}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65019/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 378eb516f5dc5992a97a077d225d448a
+2025-03-19 11:35:19 [INFO] u.LoggerUtil - Retrieved value for 'Make' using JavaScript: VOLKSWAGEN
+2025-03-19 11:35:19 [ERROR] u.LoggerUtil - Failed to switch to iframe: no such frame
+  (Session info: chrome=134.0.6998.89)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [378eb516f5dc5992a97a077d225d448a, switchToFrame {id={element-6066-11e4-a52e-4f735466cecf=f.D446E96D0F85336DBB8D9561E22CFF17.d.73F95FA4D562B8D89C5CE4CE7624FBB8.e.207}}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\teema\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65019}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65019/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 378eb516f5dc5992a97a077d225d448a
+2025-03-19 11:35:19 [INFO] u.LoggerUtil - Retrieved value for 'Model' using JavaScript: GOLF SE NAVIGATION TSI EVO
+2025-03-19 11:35:19 [ERROR] u.LoggerUtil - Failed to switch to iframe: no such frame
+  (Session info: chrome=134.0.6998.89)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [378eb516f5dc5992a97a077d225d448a, switchToFrame {id={element-6066-11e4-a52e-4f735466cecf=f.D446E96D0F85336DBB8D9561E22CFF17.d.73F95FA4D562B8D89C5CE4CE7624FBB8.e.207}}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\teema\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65019}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65019/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 378eb516f5dc5992a97a077d225d448a
+2025-03-19 11:35:19 [INFO] u.LoggerUtil - Retrieved value for 'Year' using JavaScript: 2018
+2025-03-19 11:35:19 [INFO] u.LoggerUtil - Comparing expected vs. actual results:
+2025-03-19 11:35:19 [INFO] u.LoggerUtil - Make: Expected [VOLKSWAGEN] vs Actual [VOLKSWAGEN]
+2025-03-19 11:35:19 [INFO] u.LoggerUtil - Model: Expected [GOLF SE NAVIGATION TSI EVO] vs Actual [GOLF SE NAVIGATION TSI EVO]
+2025-03-19 11:35:19 [INFO] u.LoggerUtil - Year: Expected [2018] vs Actual [2018]
+2025-03-19 11:35:19 [INFO] u.LoggerUtil - Ending teardown for class: CarOutputComparisonTest

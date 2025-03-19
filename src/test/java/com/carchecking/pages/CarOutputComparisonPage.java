@@ -8,24 +8,24 @@ public class CarOutputComparisonPage {
 
     GetMethods getMethods = GetMethods.getInstance;
 
-    @FindBy(xpath = "//table//tr[td[text()='Make']]/td[2]")
+    @FindBy(xpath = "//table//tr[td[contains(text(), 'Make')]]//td[@class='td-right']")
     private WebElement make;
 
-    @FindBy(xpath = "//table//tr[td[text()='Model']]/td[2]")
+    @FindBy(xpath = "//table//tr[td[contains(text(), 'Model')]]//td[@class='td-right']")
     private WebElement model;
 
-    @FindBy(xpath = "//table//tr[td[text()='Year of manufacture']]/td[2]")
+    @FindBy(xpath = "//table//tr[td[contains(text(), 'Year of manufacture')]]")
     private WebElement year;
 
     public String getMake() {
-        return getMethods.getText(make);
+        return getMethods.getDetailValueByLabel("Make");
     }
 
     public String getModel() {
-        return getMethods.getText(model);
+        return getMethods.getDetailValueByLabel("Model");
     }
 
     public String getYear() {
-        return getMethods.getText(year);
+        return getMethods.getDetailValueByLabel("Year");
     }
 }

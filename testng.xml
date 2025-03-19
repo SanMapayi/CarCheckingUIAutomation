@@ -10,6 +10,9 @@
         <!-- Test classes to be executed -->
         <classes>
             <class name="com.carchecking.testsCases.LandingPageTest"/>
+            <class name="com.carchecking.testsCases.CarOutputComparisonTest"/>
+            <class name="com.carchecking.testsCases.CarRegValidationTest"/>
+            <class name="com.carchecking.testsCases.CarResultValidationTest"/>
         </classes>
     </test>
 </suite>
