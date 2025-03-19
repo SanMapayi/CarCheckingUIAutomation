@@ -1,0 +1,27 @@
+2025-03-19 10:57:00 [INFO] u.LoggerUtil - Configuration file loaded successfully.
+2025-03-19 10:57:00 [INFO] o.t.i.Utils - [TestNG] Running:
+  C:\Users\teema\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+2025-03-19 10:57:00 [INFO] u.LoggerUtil - Starting setup for class: CarOutputComparisonTest
+2025-03-19 10:57:00 [INFO] u.LoggerUtil - Initializing WebDriver for browser: chrome
+2025-03-19 10:57:00 [INFO] i.g.b.w.WebDriverManager - Using chromedriver 134.0.6998.88 (resolved driver for Chrome 134)
+2025-03-19 10:57:00 [INFO] i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\teema\.cache\selenium\chromedriver\win64\134.0.6998.88\chromedriver.exe
+2025-03-19 10:57:03 [INFO] u.LoggerUtil - Starting test for vehicle registration: AD58 VNF
+2025-03-19 10:57:05 [INFO] u.LoggerUtil - Navigated to home page
+2025-03-19 10:57:05 [INFO] u.LoggerUtil - Entered value 'AD58 VNF' into 'enterRegNumber'
+2025-03-19 10:57:08 [INFO] u.LoggerUtil - Clicked on 'clickCheckNowButton'
+2025-03-19 10:57:08 [INFO] u.LoggerUtil - Clicked 'Check Now' for: AD58 VNF
+2025-03-19 10:57:09 [INFO] u.LoggerUtil - Search result displayed for: AD58 VNF
+2025-03-19 10:57:09 [INFO] u.LoggerUtil - Starting test for vehicle registration: BW57 BOW
+2025-03-19 10:57:10 [INFO] u.LoggerUtil - Navigated to home page
+2025-03-19 10:57:10 [WARN] u.LoggerUtil - Registration number not found in expected results: BW57 BOW
+2025-03-19 10:57:10 [INFO] u.LoggerUtil - Starting test for vehicle registration: KT17DLX
+2025-03-19 10:57:12 [INFO] u.LoggerUtil - Navigated to home page
+2025-03-19 10:57:12 [WARN] u.LoggerUtil - Registration number not found in expected results: KT17DLX
+2025-03-19 10:57:12 [INFO] u.LoggerUtil - Starting test for vehicle registration: SG18 HTN
+2025-03-19 10:57:13 [INFO] u.LoggerUtil - Navigated to home page
+2025-03-19 10:57:14 [INFO] u.LoggerUtil - Entered value 'SG18 HTN' into 'enterRegNumber'
+2025-03-19 10:57:17 [INFO] u.LoggerUtil - Clicked on 'clickCheckNowButton'
+2025-03-19 10:57:17 [INFO] u.LoggerUtil - Clicked 'Check Now' for: SG18 HTN
+2025-03-19 10:57:17 [INFO] u.LoggerUtil - Search result displayed for: SG18 HTN
+2025-03-19 10:57:17 [INFO] u.LoggerUtil - Ending teardown for class: CarOutputComparisonTest
