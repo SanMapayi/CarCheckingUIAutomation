@@ -1,5 +1,6 @@
 package configuration;
 
+import core.Constants;
 import org.slf4j.Logger;
 import utilities.LoggerUtil;
 
@@ -62,7 +63,7 @@ public class ReadConfig {
     }
 
     public String getUrl() {
-        return properties.getProperty("url", "https://car-checking.com");
+        return properties.getProperty("url", Constants.URL);
     }
 
     public int getImplicitWait() {

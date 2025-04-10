@@ -1,11 +1,11 @@
 package utilities;
 
+import core.Constants;
+
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -26,9 +26,9 @@ public final class CarInputAndOutputReader {
         List<String> listOfPlateNumbers = new ArrayList<>();
 
         // Read the content from the car_input.txt file
-        Path inputFilePath = Paths.get("src/test/resources/testData/car_input - V6.txt");
+
         Path userDir = Path.of(System.getProperty("user.dir"));
-        Path filePath = userDir.resolve(inputFilePath);
+        Path filePath = userDir.resolve(Constants.CARINPUTPATH);
         String carInputContent;
 
         try {
@@ -62,8 +62,8 @@ public final class CarInputAndOutputReader {
     public Map<String, List<String>> vehicleRegMakeModelYearFromOutputFile() {
 
         Map<String, List<String>> mapOfVehicleRegMakeModelAndYear = new HashMap<>();
-        String filePath = "src/test/resources/testData/car_output - V6.txt";  // Replace with your file path
-        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+        Path filePath = Constants.CAROUTPUTPATH;  // Replace with your file path
+        try (BufferedReader br = Files.newBufferedReader(filePath)) {
             // Skipping the first line
             br.readLine();
 

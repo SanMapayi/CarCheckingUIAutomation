@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class LandingPageTest extends TestBase {
+public class CarLandingPageTest extends TestBase {
 
 
     @Test(description = "Reads the car input file and extracts the vehicle registration numbers.",

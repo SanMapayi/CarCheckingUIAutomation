@@ -1,18 +1,29 @@
 package com.carchecking.pages;
 
 import com.carchecking.base.TestBase;
+import com.carchecking.behaviour.ActionMethods;
 import com.carchecking.behaviour.GetMethods;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.List;
 import java.util.Map;
 
 public class CarOutputComparisonPage extends TestBase {
 
     GetMethods getMethods = GetMethods.getInstance;
+    ActionMethods actionMethods = ActionMethods.getInstance;
+
+
+    public CarOutputComparisonPage() {
+        PageFactory.initElements(driver, this);
+    }
 
     @FindBy(xpath = "//table//tr[td[contains(text(), 'Make')]]//td[@class='td-right']")
     private WebElement make;
@@ -20,19 +31,27 @@ public class CarOutputComparisonPage extends TestBase {
     @FindBy(xpath = "//table//tr[td[contains(text(), 'Model')]]//td[@class='td-right']")
     private WebElement model;
 
-    @FindBy(xpath = "//table//tr[td[contains(text(), 'Year of manufacture')]]")
+    @FindBy(xpath = "//table//tr[td[contains(text(), 'Year of manufacture')]]//td[@class='td-right']")
     private WebElement year;
 
+    @FindBy(xpath = "//div[@Class ='alert alert-danger'][contains(text(), recognised)]")
+    private WebElement alertDanger;
+
     public String getMake() {
-        return getMethods.getDetailValueByLabel("Make");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(make));
+        return getMethods.getDetailValueByLabel("Make", make);
     }
 
     public String getModel() {
-        return getMethods.getDetailValueByLabel("Model");
+        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        getWait().until(ExpectedConditions.visibilityOf(model));
+        return getMethods.getDetailValueByLabel("Model", model);
     }
 
     public String getYear() {
-        return getMethods.getDetailValueByLabel("Year");
+        getWait().until(ExpectedConditions.visibilityOf(year));
+        return getMethods.getDetailValueByLabel("Year", year);
     }
 
     public void enterRegNumberAndSearch(String regNumber, CarCheckingHomePage carCheckingHomePage) throws IOException {
@@ -41,11 +60,21 @@ public class CarOutputComparisonPage extends TestBase {
         logger.info("Clicked 'Check Now' for: " + regNumber);
     }
 
-    public void checkIfResultIsNotDisplayed(String regNumber, CarCheckingHomePage carCheckingHomePage) {
-        if (!carCheckingHomePage.isSearchResultDisplayed()) {
+    public void checkIfResultIsNotDisplayed(String regNumber, CarCheckingHomePage carCheckingHomePage) throws IOException {
+
+       boolean isSearchResultDisplayed = carCheckingHomePage.isSearchResultDisplayed();
+        if (!isSearchResultDisplayed) {
             logger.error("Search result not displayed for: " + regNumber);
-            Assert.fail("Search result not displayed for: " + regNumber);
+            boolean resultPageIsLoaded = actionMethods.isDisplayed(alertDanger);
+            if(resultPageIsLoaded) {
+                logger.info("Licence plate number is not recognised");
+                Assert.fail("Licence plate number is not recognised" + regNumber);
+            }
+            //captureScreen("testName");
+            Assert.fail("Search result not displayed for: a possible server(5000 error) " + regNumber);
         }
+
+
     }
 
     public void checkIfMapContainsKeys
@@ -80,5 +109,19 @@ public class CarOutputComparisonPage extends TestBase {
         Assert.assertEquals(actualModel, expectedModel, "Model mismatch for " + regNumber);
         Assert.assertEquals(actualYear, expectedYear, "Year mismatch for " + regNumber);
     }
+
+
+    public List<String> getAndCheckIfRegNumberIsPresent(Map<String, List<String>> mapOfExpectedResultOutput, String regNumber) {
+        List<String> expectedDetails = mapOfExpectedResultOutput.get(regNumber);
+        if (expectedDetails == null) {
+            logger.info("The list [{}] for registration [{}] is null", expectedDetails, regNumber);
+            logger.info("reg number [{}] is not present in the list", regNumber);
+            Assert.fail("The reg number %s is not present in the output file".formatted(regNumber));
+        }
+
+        return expectedDetails;
+    }
+
+
 
 }
