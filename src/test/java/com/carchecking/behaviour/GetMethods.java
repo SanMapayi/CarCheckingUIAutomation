@@ -2,9 +2,12 @@ package com.carchecking.behaviour;
 
 import com.carchecking.base.TestBase;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class GetMethods extends TestBase {
 
@@ -48,31 +51,37 @@ public class GetMethods extends TestBase {
      * @param label The label text (e.g., "Make", "Model").
      * @return The value corresponding to the label (e.g., "BMW").
      */
-    public String getDetailValueByLabel(String label) {
+    public String getDetailValueByLabel(String label, WebElement webElement) {
         try {
             // Switch to the iframe containing the relevant elements
             switchToCarOutputIframe();
 
+            // Wait for the WebElement to be clickable
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            wait.until(ExpectedConditions.elementToBeClickable(webElement));
+
             // Use JavaScript to retrieve the corresponding detail value by label
             JavascriptExecutor js = (JavascriptExecutor) driver;
 
-            // JavaScript to find the label and get the value from the next td with class 'td-right'
-            String script = "return document.evaluate(\"//table//tr[td[contains(text(), '" + label + "')]]//td[@class='td-right']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.textContent;";
+            // JavaScript to get the value of the WebElement directly
+            String script = "return arguments[0].textContent;";  // Directly use the WebElement argument
 
             // Execute JavaScript and return the result
-            String value = (String) js.executeScript(script);
+            String value = (String) js.executeScript(script, webElement);
 
             if (value != null && !value.isEmpty()) {
                 logger.info("Retrieved value for '{}' using JavaScript: {}", label, value);
             } else {
                 logger.warn("No value found for '{}'", label);
             }
+
             return value != null ? value : "";
         } catch (Exception e) {
             logger.error("Failed to retrieve detail value for '{}': {}", label, e.getMessage());
             return "";
         }
     }
+
 
     /**
      * Switches to the iframe that contains the car output details.

@@ -23,11 +23,11 @@ public class CarRegValidationTest extends TestBase {
     public void testFileExistsSizeAndReadable() throws IOException {
 
         //Validating that the file exits.
-        Assert.assertTrue(Files.exists(Constants.INPUTPATHSTRING), "Car input file does not exist.");
+        Assert.assertTrue(Files.exists(Constants.CARINPUTPATH), "Car input file does not exist.");
         //Validating that the file exits.
-        Assert.assertTrue(Files.size(Constants.INPUTPATHSTRING) > 0, "Car input file is empty.");
+        Assert.assertTrue(Files.size(Constants.CARINPUTPATH) > 0, "Car input file is empty.");
         //Validating that the file is readable.
-        Assert.assertTrue(Files.isReadable(Constants.INPUTPATHSTRING), "The file is not readable");
+        Assert.assertTrue(Files.isReadable(Constants.CARINPUTPATH), "The file is not readable");
     }
 
 

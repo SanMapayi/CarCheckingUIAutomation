@@ -1,48 +1,29 @@
-2025-03-19 14:29:30 [ERROR] u.LoggerUtil - Failed to switch to iframe: no such frame
+2025-04-03 15:41:36 [ERROR] u.LoggerUtil - Failed to switch to iframe: no such frame
   (Session info: chrome=134.0.6998.89)
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ba3fd89fda9673624122dd75345189d5, switchToFrame {id={element-6066-11e4-a52e-4f735466cecf=f.426D809E797939AABA957D0E979F5E12.d.DC145A5C9EAD4A4A9A2B5FD7B4437986.e.6527}}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\teema\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64651}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64651/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ba3fd89fda9673624122dd75345189d5
-2025-03-19 14:29:30 [ERROR] u.LoggerUtil - Failed to switch to iframe: no such frame
+Command: [88059a68acfd0de8f4b1c139fe0e03cf, switchToFrame {id={element-6066-11e4-a52e-4f735466cecf=f.711517B409524470AB28B866CF3113F0.d.6538070922237DE0CCA76E6B8CDE9E04.e.6700}}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\teema\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59781/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 88059a68acfd0de8f4b1c139fe0e03cf
+2025-04-03 15:41:36 [ERROR] u.LoggerUtil - Failed to switch to iframe: no such frame
   (Session info: chrome=134.0.6998.89)
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ba3fd89fda9673624122dd75345189d5, switchToFrame {id={element-6066-11e4-a52e-4f735466cecf=f.426D809E797939AABA957D0E979F5E12.d.DC145A5C9EAD4A4A9A2B5FD7B4437986.e.6527}}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\teema\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64651}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64651/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ba3fd89fda9673624122dd75345189d5
-2025-03-19 14:29:30 [ERROR] u.LoggerUtil - Failed to switch to iframe: no such frame
+Command: [88059a68acfd0de8f4b1c139fe0e03cf, switchToFrame {id={element-6066-11e4-a52e-4f735466cecf=f.711517B409524470AB28B866CF3113F0.d.6538070922237DE0CCA76E6B8CDE9E04.e.6700}}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\teema\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59781/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 88059a68acfd0de8f4b1c139fe0e03cf
+2025-04-03 15:41:36 [ERROR] u.LoggerUtil - Failed to switch to iframe: no such frame
   (Session info: chrome=134.0.6998.89)
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ba3fd89fda9673624122dd75345189d5, switchToFrame {id={element-6066-11e4-a52e-4f735466cecf=f.426D809E797939AABA957D0E979F5E12.d.DC145A5C9EAD4A4A9A2B5FD7B4437986.e.6527}}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\teema\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64651}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64651/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ba3fd89fda9673624122dd75345189d5
-2025-03-19 14:29:56 [ERROR] u.LoggerUtil - Failed to switch to iframe: no such frame
-  (Session info: chrome=134.0.6998.89)
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c0c550812bced5ba5975ebbef512b6e6, switchToFrame {id={element-6066-11e4-a52e-4f735466cecf=f.BD1238B842232C6258FCFBA32418E980.d.C3A295068A7D462C1BD79F744AC91DB1.e.106}}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\teema\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64782}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64782/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c0c550812bced5ba5975ebbef512b6e6
-2025-03-19 14:29:56 [ERROR] u.LoggerUtil - Failed to switch to iframe: no such frame
-  (Session info: chrome=134.0.6998.89)
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c0c550812bced5ba5975ebbef512b6e6, switchToFrame {id={element-6066-11e4-a52e-4f735466cecf=f.BD1238B842232C6258FCFBA32418E980.d.C3A295068A7D462C1BD79F744AC91DB1.e.106}}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\teema\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64782}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64782/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c0c550812bced5ba5975ebbef512b6e6
-2025-03-19 14:29:56 [ERROR] u.LoggerUtil - Failed to switch to iframe: no such frame
-  (Session info: chrome=134.0.6998.89)
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c0c550812bced5ba5975ebbef512b6e6, switchToFrame {id={element-6066-11e4-a52e-4f735466cecf=f.BD1238B842232C6258FCFBA32418E980.d.C3A295068A7D462C1BD79F744AC91DB1.e.106}}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\teema\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64782}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64782/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c0c550812bced5ba5975ebbef512b6e6
+Command: [88059a68acfd0de8f4b1c139fe0e03cf, switchToFrame {id={element-6066-11e4-a52e-4f735466cecf=f.711517B409524470AB28B866CF3113F0.d.6538070922237DE0CCA76E6B8CDE9E04.e.6700}}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\teema\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59781/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 88059a68acfd0de8f4b1c139fe0e03cf
+2025-04-03 15:42:39 [ERROR] u.LoggerUtil - [Proxy element for: DefaultElementLocator 'By.xpath: //div[@id='content']//div[contains(@class, 'content-holder')]//div[contains(@class, 'report-header')]'] is not displayed and error [Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@id='content']//div[contains(@class, 'content-holder')]//div[contains(@class, 'report-header')]' (tried for 15 second(s) with 500 milliseconds interval)] thrown
+2025-04-03 15:42:49 [ERROR] u.LoggerUtil - Search result not displayed for: SG18 HTN
+2025-04-03 15:43:19 [ERROR] u.LoggerUtil - [Proxy element for: DefaultElementLocator 'By.xpath: //div[@Class ='alert alert-danger'][contains(text(), recognised)]'] is not displayed and error [Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@Class ='alert alert-danger'][contains(text(), recognised)]' (tried for 15 second(s) with 500 milliseconds interval)] thrown
+2025-04-03 15:45:30 [ERROR] u.LoggerUtil - [Proxy element for: DefaultElementLocator 'By.className: alert-danger'] is not displayed and error [Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.className: alert-danger' (tried for 15 second(s) with 500 milliseconds interval)] thrown
+2025-04-03 15:45:40 [ERROR] u.LoggerUtil - No alert message found; possible unexpected issue, may be a 500 error.

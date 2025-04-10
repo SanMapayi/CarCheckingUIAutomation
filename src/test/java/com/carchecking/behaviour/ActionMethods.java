@@ -42,10 +42,9 @@ public class ActionMethods extends TestBase {
                 getWait().until(ExpectedConditions.elementToBeClickable(element));
                 element.click();
                 logger.info("A click function is performed on " + element);
-                return;
             }
             catch (Exception e) {System.out.println(e.getMessage());
-                captureScreen(driver, featureName);}
+                captureScreen(featureName);}
         }
 
     }
@@ -58,17 +57,17 @@ public class ActionMethods extends TestBase {
 
         }
         catch (Exception e) {
-            System.out.println(e.getMessage());
-            return element.isDisplayed();
+            logger.error("[{}] is not displayed and error [{}] thrown", element, e.getMessage());
+            return false;
         }
 
     }
-    public static void SelectElement(WebElement element, String Value)
+    public void SelectElement(WebElement element, String Value)
     {
         new Select(element).selectByValue(Value);
     }
 
-    public static ExpectedCondition<Boolean> visibilityofElement(final WebElement element){
+    public ExpectedCondition<Boolean> visibilityOfElement(final WebElement element){
         return  new ExpectedCondition<Boolean>() {
             @Override
             public Boolean apply(WebDriver driver) {
@@ -76,7 +75,7 @@ public class ActionMethods extends TestBase {
                     logger.info("The element is displayed");
                     return element.isDisplayed();
                 } catch (NoSuchElementException e) {
-                    System.out.println("No Such element here!");
+                    logger.error("No Such element here! and error " + e.getMessage() );
                     return false;}
                 catch (StaleElementReferenceException el) {
                     return false;

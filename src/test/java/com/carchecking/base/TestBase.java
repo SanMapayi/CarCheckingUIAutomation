@@ -2,11 +2,9 @@ package com.carchecking.base;
 
 import configuration.LogDirectorySetup;
 import configuration.ReadConfig;
+import core.Constants;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Dimension;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -16,38 +14,49 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 import utilities.LoggerUtil;
+import utilities.ScreenshotUtil;
 
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.Path;
 import java.time.Duration;
 
 public class TestBase {
     protected static WebDriver driver;
     public static WebDriverWait wait;
     protected static final Logger logger = LoggerUtil.getLogger();
+    public static ScreenshotUtil screenshotUtil;
+
+
     protected static ReadConfig config = ReadConfig.getInstance(); // Singleton config loader
 
 
+    @BeforeSuite
+    public void beforeSuite() throws IOException {
+        screenshotUtil = new ScreenshotUtil(driver, logger);
+        screenshotUtil.deleteFailedScreenshotsInFolder(Constants.SCREENSHOTSPATH);
+    }
 
     @BeforeClass
-    public void setup() {
+    public void setup() throws IOException {
         // Loging the setup process
         logger.info("Starting setup for class: " + this.getClass().getSimpleName());
         // Initialize WebDriver from TestBase class
         TestBase.initialize();
 
+
     }
 
 
     // Initialize WebDriver
-    public static void initialize() {
+    public static WebDriver initialize() throws IOException {
         if (driver != null) {
             logger.info("WebDriver already initialized.");
-            return;
+            return driver;
         }
 
         LogDirectorySetup.createLogDirectory();  // Ensure log directory exist
@@ -106,8 +115,11 @@ public class TestBase {
 
         wait = new WebDriverWait(driver, Duration.ofSeconds(config.getExplicitWait()));
 
+        screenshotUtil = new ScreenshotUtil(driver, logger);
+
         // Open application URL
         driver.get(config.getUrl());
+        return driver;
     }
 
     // Getter for WebDriverWait to be used in test classes
@@ -124,13 +136,34 @@ public class TestBase {
         }
     }
     // Capture screenshot method
-    public static void captureScreen(WebDriver driver, String testName) throws IOException {
-        TakesScreenshot ts = (TakesScreenshot) driver;
-        File source = ts.getScreenshotAs(OutputType.FILE);
-        Path screenshotsFilePath = Path.of(System.getProperty("user.dir"), "Screenshots", testName + ".png");
-        File target = new File(screenshotsFilePath.toFile().toString());
-        FileUtils.copyFile(source, target);
-        logger.info("Screenshot taken: {}", target.getAbsolutePath());
+    public static void captureScreen(String testName) throws IOException {
+        screenshotUtil.captureScreenshot(testName);
+    }
+
+    @AfterMethod
+    public void tearDown(ITestResult result) {
+
+        // Capture screenshot on test failure
+        if (result.getStatus() == ITestResult.FAILURE) {
+            System.out.println("result status");
+            try {
+                if (TestBase.screenshotUtil == null) {
+                   logger.info("screenshot is null");
+                }
+                if (TestBase.driver == null) {
+                    logger.info("driver is null");
+                }
+                TestBase.captureScreen(result.getMethod().getMethodName());
+                TestBase.logger.info("Screenshot captured for test: " + result.getMethod().getMethodName());
+            } catch (IOException e) {
+                TestBase.logger.error("Failed to capture screenshot", e);
+            }
+        }
+        // Quit WebDriver after each test method
+        if (TestBase.driver != null) {
+            TestBase.driver.quit();
+            TestBase.driver = null; // Reset the driver to null
+        }
     }
 
 }
