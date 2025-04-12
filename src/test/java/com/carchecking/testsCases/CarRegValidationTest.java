@@ -58,7 +58,7 @@ public class CarRegValidationTest extends TestBase {
 
         // Assert no duplicates in the list
         Set<String> uniquePlateNumbers = new HashSet<>(listOfExtractedRegNumbers);
-        Assert.assertEquals(listOfExtractedRegNumbers.size(), uniquePlateNumbers.size(), "There are duplicates in the car input file.");
+        Assert.assertEquals(listOfExtractedRegNumbers.size(), uniquePlateNumbers.size(), "There are duplicates reg numbers in the car input file.");
     }
 
 

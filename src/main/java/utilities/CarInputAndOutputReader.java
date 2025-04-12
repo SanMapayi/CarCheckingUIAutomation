@@ -34,7 +34,7 @@ public final class CarInputAndOutputReader {
         try {
             carInputContent = Files.readString(filePath);
 
-        // The regex pattern for UK registration plates with or without space in between.
+        // The regex pattern for UK registration plates with or without a space in between.
         String regexPlateNum = "[A-Z]{2}\\d{1,2}\\s?[A-Z]{3}";
 
         // Create a Pattern object

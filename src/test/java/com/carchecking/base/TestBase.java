@@ -150,19 +150,19 @@ public class TestBase {
                 if (TestBase.screenshotUtil == null) {
                    logger.info("screenshot is null");
                 }
-                if (TestBase.driver == null) {
+                if (driver == null) {
                     logger.info("driver is null");
                 }
-                TestBase.captureScreen(result.getMethod().getMethodName());
-                TestBase.logger.info("Screenshot captured for test: " + result.getMethod().getMethodName());
+                captureScreen(result.getMethod().getMethodName());
+                logger.info("Screenshot captured for test: " + result.getMethod().getMethodName());
             } catch (IOException e) {
-                TestBase.logger.error("Failed to capture screenshot", e);
+                logger.error("Failed to capture screenshot", e);
             }
         }
         // Quit WebDriver after each test method
-        if (TestBase.driver != null) {
-            TestBase.driver.quit();
-            TestBase.driver = null; // Reset the driver to null
+        if (driver != null) {
+            driver.quit();
+            driver = null; // Reset the driver to null
         }
     }
 

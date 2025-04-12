@@ -28,7 +28,6 @@ public class CarLandingPageTest extends TestBase {
 
         // Verifying the page title
         String pageTitle = driver.getTitle();
-        System.out.println(pageTitle);
         logger.info("Page title: {}", pageTitle);
         assertTrue("Page title is incorrect!", pageTitle.contains("Car Checking"));
     }
