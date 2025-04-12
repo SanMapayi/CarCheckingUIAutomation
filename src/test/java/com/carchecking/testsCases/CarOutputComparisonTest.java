@@ -42,7 +42,7 @@ public class CarOutputComparisonTest extends TestBase implements ITestLifecycleB
                 regNumber, carCheckingHomePage, carOutputComparisonPage
         );
 
-        // Fetching actual values from website using JS and asserting for make, model, and year
+        // Fetching actual values from website using JS and asserting for make, model, and year and compare with expected values
         carOutputComparisonPage.fetchingExpectedValueAndValidationTest(carOutputComparisonPage, expectedDetails.get(0),
                 expectedDetails.get(1), expectedDetails.get(2), regNumber);
     }
