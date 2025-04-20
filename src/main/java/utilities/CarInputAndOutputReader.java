@@ -80,6 +80,4 @@ public final class CarInputAndOutputReader {
         }
         return null;
     }
-
-
 }
