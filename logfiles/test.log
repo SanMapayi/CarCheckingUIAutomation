@@ -1,138 +1,22 @@
-2025-04-20 15:32:34 [INFO] u.LoggerUtil - Configuration file loaded successfully.
-2025-04-20 15:32:34 [INFO] u.LoggerUtil - Deleted: C:\Users\teema\eclipse-workspace\com.car-checking\screenshots\clickHomePageLink_20250420152625.png
-2025-04-20 15:32:34 [INFO] u.LoggerUtil - Deleted: C:\Users\teema\eclipse-workspace\com.car-checking\screenshots\clickHomePageLink_20250420152703.png
-2025-04-20 15:32:34 [INFO] u.LoggerUtil - Deleted: C:\Users\teema\eclipse-workspace\com.car-checking\screenshots\testCompareCarValuationResults_20250420152417.png
-2025-04-20 15:32:34 [INFO] u.LoggerUtil - Deleted: C:\Users\teema\eclipse-workspace\com.car-checking\screenshots\testCompareCarValuationResults_20250420152421.png
-2025-04-20 15:32:34 [INFO] u.LoggerUtil - Deleted: C:\Users\teema\eclipse-workspace\com.car-checking\screenshots\testCompareCarValuationResults_20250420152559.png
-2025-04-20 15:32:34 [INFO] u.LoggerUtil - Deleted: C:\Users\teema\eclipse-workspace\com.car-checking\screenshots\testEnterPlateNumberInCarValuationPage_20250420152644.png
-2025-04-20 15:32:34 [INFO] u.LoggerUtil - Deleted: C:\Users\teema\eclipse-workspace\com.car-checking\screenshots\testEnterPlateNumberInCarValuationPage_20250420152811.png
-2025-04-20 15:32:34 [INFO] u.LoggerUtil - Starting setup for class: CarLandingPageTest
-2025-04-20 15:32:34 [INFO] u.LoggerUtil - Initializing WebDriver for browser: chrome
-2025-04-20 15:32:34 [INFO] i.g.b.w.WebDriverManager - Using chromedriver 135.0.7049.95 (resolved driver for Chrome 135)
-2025-04-20 15:32:34 [INFO] i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\teema\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe
-2025-04-20 15:32:38 [INFO] u.LoggerUtil - Setting up the WebDriver in the landing page test
-2025-04-20 15:32:38 [INFO] u.LoggerUtil - Verifying the page URL
-2025-04-20 15:32:38 [INFO] u.LoggerUtil - Page title: Vehicle check - Check Your Car's History Online - Car Checking
-2025-04-20 15:32:38 [INFO] u.LoggerUtil - Ending teardown for class: CarLandingPageTest
-2025-04-20 15:32:38 [INFO] u.LoggerUtil - Starting setup for class: CarOutputComparisonTest
-2025-04-20 15:32:38 [INFO] u.LoggerUtil - Initializing WebDriver for browser: chrome
-2025-04-20 15:32:38 [INFO] i.g.b.w.WebDriverManager - Using chromedriver 135.0.7049.95 (resolved driver for Chrome 135)
-2025-04-20 15:32:38 [INFO] i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\teema\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe
-2025-04-20 15:32:41 [INFO] u.LoggerUtil - Starting test for vehicle registration: AD58 VNF
-2025-04-20 15:32:43 [INFO] u.LoggerUtil - Navigated to home page in [testCompareCarValuationResults]
-2025-04-20 15:32:43 [INFO] u.LoggerUtil - AD58 VNF is Entered
-2025-04-20 15:32:57 [INFO] u.LoggerUtil - A click function is performed on Proxy element for: DefaultElementLocator 'By.xpath: //button[contains(text(), 'Check Now')]'
-2025-04-20 15:32:57 [INFO] u.LoggerUtil - Clicked 'Check Now' for: AD58 VNF
-2025-04-20 15:32:57 [INFO] u.LoggerUtil - Search result displayed for: AD58 VNF
-2025-04-20 15:32:57 [ERROR] u.LoggerUtil - Failed to switch to iframe: no such frame
-  (Session info: chrome=135.0.7049.96)
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e5964206155fd91d2980b84119d10ca1, switchToFrame {id={element-6066-11e4-a52e-4f735466cecf=f.6B5E4D41146296CA991232B1EFA40C74.d.B174F64AD9E8D2ADD7727E048C85B068.e.98}}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\teema\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55522}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55522/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e5964206155fd91d2980b84119d10ca1
-2025-04-20 15:32:57 [INFO] u.LoggerUtil - Retrieved value for 'Make' using JavaScript: BMW
-2025-04-20 15:32:57 [ERROR] u.LoggerUtil - Failed to switch to iframe: no such frame
-  (Session info: chrome=135.0.7049.96)
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e5964206155fd91d2980b84119d10ca1, switchToFrame {id={element-6066-11e4-a52e-4f735466cecf=f.6B5E4D41146296CA991232B1EFA40C74.d.B174F64AD9E8D2ADD7727E048C85B068.e.98}}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\teema\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55522}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55522/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e5964206155fd91d2980b84119d10ca1
-2025-04-20 15:32:57 [INFO] u.LoggerUtil - Retrieved value for 'Model' using JavaScript: 120D M SPORT
-2025-04-20 15:32:57 [ERROR] u.LoggerUtil - Failed to switch to iframe: no such frame
-  (Session info: chrome=135.0.7049.96)
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e5964206155fd91d2980b84119d10ca1, switchToFrame {id={element-6066-11e4-a52e-4f735466cecf=f.6B5E4D41146296CA991232B1EFA40C74.d.B174F64AD9E8D2ADD7727E048C85B068.e.98}}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\teema\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55522}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55522/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e5964206155fd91d2980b84119d10ca1
-2025-04-20 15:32:57 [INFO] u.LoggerUtil - Retrieved value for 'Year' using JavaScript: 2008
-2025-04-20 15:32:57 [INFO] u.LoggerUtil - Comparing expected vs. actual results:
-2025-04-20 15:32:57 [INFO] u.LoggerUtil - Make: Expected [BMW] vs Actual [BMW]
-2025-04-20 15:32:57 [INFO] u.LoggerUtil - Model: Expected [120D M SPORT] vs Actual [120D M SPORT]
-2025-04-20 15:32:57 [INFO] u.LoggerUtil - Year: Expected [2008] vs Actual [2008]
-2025-04-20 15:32:57 [INFO] u.LoggerUtil - Initializing WebDriver for browser: chrome
-2025-04-20 15:32:57 [INFO] i.g.b.w.WebDriverManager - Using chromedriver 135.0.7049.95 (resolved driver for Chrome 135)
-2025-04-20 15:32:57 [INFO] i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\teema\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe
-2025-04-20 15:33:00 [INFO] u.LoggerUtil - Starting test for vehicle registration: BW57 BOW
-2025-04-20 15:33:02 [INFO] u.LoggerUtil - Navigated to home page in [testCompareCarValuationResults]
-2025-04-20 15:33:02 [WARN] u.LoggerUtil - Registration number not found in expected results: BW57 BOW
-2025-04-20 15:33:02 [INFO] u.LoggerUtil - Screenshot saved at: C:\Users\teema\eclipse-workspace\com.car-checking/screenshots/testCompareCarValuationResults_20250420153302.png
-2025-04-20 15:33:02 [INFO] u.LoggerUtil - Screenshot captured for test: testCompareCarValuationResults
-2025-04-20 15:33:03 [INFO] u.LoggerUtil - Initializing WebDriver for browser: chrome
-2025-04-20 15:33:03 [INFO] i.g.b.w.WebDriverManager - Using chromedriver 135.0.7049.95 (resolved driver for Chrome 135)
-2025-04-20 15:33:03 [INFO] i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\teema\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe
-2025-04-20 15:33:05 [INFO] u.LoggerUtil - Starting test for vehicle registration: KT17DLX
-2025-04-20 15:33:07 [INFO] u.LoggerUtil - Navigated to home page in [testCompareCarValuationResults]
-2025-04-20 15:33:07 [WARN] u.LoggerUtil - Registration number not found in expected results: KT17DLX
-2025-04-20 15:33:07 [INFO] u.LoggerUtil - Screenshot saved at: C:\Users\teema\eclipse-workspace\com.car-checking/screenshots/testCompareCarValuationResults_20250420153307.png
-2025-04-20 15:33:07 [INFO] u.LoggerUtil - Screenshot captured for test: testCompareCarValuationResults
-2025-04-20 15:33:07 [INFO] u.LoggerUtil - Initializing WebDriver for browser: chrome
-2025-04-20 15:33:07 [INFO] i.g.b.w.WebDriverManager - Using chromedriver 135.0.7049.95 (resolved driver for Chrome 135)
-2025-04-20 15:33:07 [INFO] i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\teema\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe
-2025-04-20 15:33:10 [INFO] u.LoggerUtil - Starting test for vehicle registration: SG18 HTN
-2025-04-20 15:33:12 [INFO] u.LoggerUtil - Navigated to home page in [testCompareCarValuationResults]
-2025-04-20 15:33:12 [INFO] u.LoggerUtil - SG18 HTN is Entered
-2025-04-20 15:33:24 [INFO] u.LoggerUtil - A click function is performed on Proxy element for: DefaultElementLocator 'By.xpath: //button[contains(text(), 'Check Now')]'
-2025-04-20 15:33:24 [INFO] u.LoggerUtil - Clicked 'Check Now' for: SG18 HTN
-2025-04-20 15:33:55 [ERROR] u.LoggerUtil - [Proxy element for: DefaultElementLocator 'By.xpath: //div[@id='content']//div[contains(@class, 'content-holder')]//div[contains(@class, 'report-header')]'] is not displayed and error [Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@id='content']//div[contains(@class, 'content-holder')]//div[contains(@class, 'report-header')]' (tried for 15 second(s) with 500 milliseconds interval)] thrown
-2025-04-20 15:34:05 [ERROR] u.LoggerUtil - Search result not displayed for: SG18 HTN
-2025-04-20 15:34:35 [ERROR] u.LoggerUtil - [Proxy element for: DefaultElementLocator 'By.xpath: //div[@Class ='alert alert-danger'][contains(text(), recognised)]'] is not displayed and error [Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@Class ='alert alert-danger'][contains(text(), recognised)]' (tried for 15 second(s) with 500 milliseconds interval)] thrown
-2025-04-20 15:34:45 [INFO] u.LoggerUtil - Screenshot saved at: C:\Users\teema\eclipse-workspace\com.car-checking/screenshots/testCompareCarValuationResults_20250420153445.png
-2025-04-20 15:34:45 [INFO] u.LoggerUtil - Screenshot captured for test: testCompareCarValuationResults
-2025-04-20 15:34:46 [INFO] u.LoggerUtil - Ending teardown for class: CarOutputComparisonTest
-2025-04-20 15:34:46 [INFO] u.LoggerUtil - Starting setup for class: CarRegValidationTest
-2025-04-20 15:34:46 [INFO] u.LoggerUtil - Initializing WebDriver for browser: chrome
-2025-04-20 15:34:46 [INFO] i.g.b.w.WebDriverManager - Using chromedriver 135.0.7049.95 (resolved driver for Chrome 135)
-2025-04-20 15:34:46 [INFO] i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\teema\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe
-2025-04-20 15:34:49 [INFO] u.LoggerUtil - Ending teardown for class: CarRegValidationTest
-2025-04-20 15:34:49 [INFO] u.LoggerUtil - Starting setup for class: CarResultValidationTest
-2025-04-20 15:34:49 [INFO] u.LoggerUtil - Initializing WebDriver for browser: chrome
-2025-04-20 15:34:49 [INFO] i.g.b.w.WebDriverManager - Using chromedriver 135.0.7049.95 (resolved driver for Chrome 135)
-2025-04-20 15:34:49 [INFO] i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\teema\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe
-2025-04-20 15:34:52 [INFO] u.LoggerUtil - Initializing WebDriver for browser: chrome
-2025-04-20 15:34:52 [INFO] i.g.b.w.WebDriverManager - Using chromedriver 135.0.7049.95 (resolved driver for Chrome 135)
-2025-04-20 15:34:52 [INFO] i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\teema\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe
-2025-04-20 15:34:57 [INFO] u.LoggerUtil - Starting test for vehicle registration: AD58 VNF
-2025-04-20 15:34:59 [INFO] u.LoggerUtil - Navigated to home page
-2025-04-20 15:34:59 [INFO] u.LoggerUtil - AD58 VNF is Entered
-2025-04-20 15:35:13 [INFO] u.LoggerUtil - A click function is performed on Proxy element for: DefaultElementLocator 'By.xpath: //button[contains(text(), 'Check Now')]'
-2025-04-20 15:35:13 [INFO] u.LoggerUtil - Search successful, returning to home page.
-2025-04-20 15:35:14 [INFO] u.LoggerUtil - Screenshot saved at: C:\Users\teema\eclipse-workspace\com.car-checking/screenshots/clickHomePageLink_20250420153514.png
-2025-04-20 15:35:14 [INFO] u.LoggerUtil - Initializing WebDriver for browser: chrome
-2025-04-20 15:35:14 [INFO] i.g.b.w.WebDriverManager - Using chromedriver 135.0.7049.95 (resolved driver for Chrome 135)
-2025-04-20 15:35:14 [INFO] i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\teema\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe
-2025-04-20 15:35:17 [INFO] u.LoggerUtil - Starting test for vehicle registration: BW57 BOW
-2025-04-20 15:35:18 [INFO] u.LoggerUtil - Navigated to home page
-2025-04-20 15:35:19 [INFO] u.LoggerUtil - BW57 BOW is Entered
-2025-04-20 15:35:22 [INFO] u.LoggerUtil - A click function is performed on [[ChromeDriver: chrome on windows (a52ed97675a6204bf599077b05a860ec)] -> xpath: //button[contains(text(), 'Check Now')]]
-2025-04-20 15:35:32 [WARN] u.LoggerUtil - Search result is NOT displayed for: BW57 BOW
-2025-04-20 15:35:32 [INFO] u.LoggerUtil - Licence plate number is not recognised BW57 BOW
-2025-04-20 15:35:33 [INFO] u.LoggerUtil - Screenshot saved at: C:\Users\teema\eclipse-workspace\com.car-checking/screenshots/testEnterPlateNumberInCarValuationPage_20250420153532.png
-2025-04-20 15:35:33 [INFO] u.LoggerUtil - Screenshot captured for test: testEnterPlateNumberInCarValuationPage
-2025-04-20 15:35:33 [INFO] u.LoggerUtil - Initializing WebDriver for browser: chrome
-2025-04-20 15:35:33 [INFO] i.g.b.w.WebDriverManager - Using chromedriver 135.0.7049.95 (resolved driver for Chrome 135)
-2025-04-20 15:35:33 [INFO] i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\teema\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe
-2025-04-20 15:35:36 [INFO] u.LoggerUtil - Starting test for vehicle registration: KT17DLX
-2025-04-20 15:35:37 [INFO] u.LoggerUtil - Navigated to home page
-2025-04-20 15:35:37 [INFO] u.LoggerUtil - KT17DLX is Entered
-2025-04-20 15:35:51 [INFO] u.LoggerUtil - A click function is performed on Proxy element for: DefaultElementLocator 'By.xpath: //button[contains(text(), 'Check Now')]'
-2025-04-20 15:35:51 [INFO] u.LoggerUtil - Search successful, returning to home page.
-2025-04-20 15:35:52 [INFO] u.LoggerUtil - Screenshot saved at: C:\Users\teema\eclipse-workspace\com.car-checking/screenshots/clickHomePageLink_20250420153552.png
-2025-04-20 15:35:53 [INFO] u.LoggerUtil - Initializing WebDriver for browser: chrome
-2025-04-20 15:35:53 [INFO] i.g.b.w.WebDriverManager - Using chromedriver 135.0.7049.95 (resolved driver for Chrome 135)
-2025-04-20 15:35:53 [INFO] i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\teema\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe
-2025-04-20 15:35:56 [INFO] u.LoggerUtil - Starting test for vehicle registration: SG18 HTN
-2025-04-20 15:35:57 [INFO] u.LoggerUtil - Navigated to home page
-2025-04-20 15:35:57 [INFO] u.LoggerUtil - SG18 HTN is Entered
-2025-04-20 15:36:09 [INFO] u.LoggerUtil - A click function is performed on Proxy element for: DefaultElementLocator 'By.xpath: //button[contains(text(), 'Check Now')]'
-2025-04-20 15:36:19 [WARN] u.LoggerUtil - Search result is NOT displayed for: SG18 HTN
-2025-04-20 15:36:50 [ERROR] u.LoggerUtil - [Proxy element for: DefaultElementLocator 'By.className: alert-danger'] is not displayed and error [Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.className: alert-danger' (tried for 15 second(s) with 500 milliseconds interval)] thrown
-2025-04-20 15:37:00 [ERROR] u.LoggerUtil - No alert message found; possible unexpected issue, may be a 500 error.
-2025-04-20 15:37:00 [INFO] u.LoggerUtil - Screenshot saved at: C:\Users\teema\eclipse-workspace\com.car-checking/screenshots/testEnterPlateNumberInCarValuationPage_20250420153700.png
-2025-04-20 15:37:00 [INFO] u.LoggerUtil - Screenshot captured for test: testEnterPlateNumberInCarValuationPage
-2025-04-20 15:37:01 [INFO] u.LoggerUtil - Ending teardown for class: CarResultValidationTest
+2025-04-21 15:58:27 [INFO] u.LoggerUtil - Configuration file loaded successfully from classpath.
+2025-04-21 15:58:27 [INFO] o.t.i.Utils - [TestNG] Running:
+  C:\Users\teema\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+2025-04-21 15:58:27 [INFO] u.LoggerUtil - Deleted: C:\Users\teema\eclipse-workspace\com.car-checking\screenshots\clickHomePageLink_20250421155301.png
+2025-04-21 15:58:27 [INFO] u.LoggerUtil - Deleted: C:\Users\teema\eclipse-workspace\com.car-checking\screenshots\clickHomePageLink_20250421155339.png
+2025-04-21 15:58:27 [INFO] u.LoggerUtil - Deleted: C:\Users\teema\eclipse-workspace\com.car-checking\screenshots\testCompareCarValuationResults_20250421155054.png
+2025-04-21 15:58:27 [INFO] u.LoggerUtil - Deleted: C:\Users\teema\eclipse-workspace\com.car-checking\screenshots\testCompareCarValuationResults_20250421155058.png
+2025-04-21 15:58:27 [INFO] u.LoggerUtil - Deleted: C:\Users\teema\eclipse-workspace\com.car-checking\screenshots\testCompareCarValuationResults_20250421155236.png
+2025-04-21 15:58:27 [INFO] u.LoggerUtil - Deleted: C:\Users\teema\eclipse-workspace\com.car-checking\screenshots\testEnterPlateNumberInCarValuationPage_20250421155320.png
+2025-04-21 15:58:27 [INFO] u.LoggerUtil - Deleted: C:\Users\teema\eclipse-workspace\com.car-checking\screenshots\testEnterPlateNumberInCarValuationPage_20250421155447.png
+2025-04-21 15:58:27 [INFO] u.LoggerUtil - Deleted: C:\Users\teema\eclipse-workspace\com.car-checking\screenshots\testLoadWebPage_20250421155030.png
+2025-04-21 15:58:27 [INFO] u.LoggerUtil - Starting setup for class: CarLandingPageTest
+2025-04-21 15:58:27 [INFO] u.LoggerUtil - Initializing WebDriver for browser: chrome
+2025-04-21 15:58:27 [INFO] u.LoggerUtil - Using Remote WebDriver: false
+2025-04-21 15:58:27 [INFO] i.g.b.w.WebDriverManager - Using chromedriver 135.0.7049.95 (resolved driver for Chrome 135)
+2025-04-21 15:58:27 [INFO] i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\teema\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe
+2025-04-21 15:58:31 [INFO] u.LoggerUtil - Setting up the WebDriver in the landing page test
+2025-04-21 15:58:31 [INFO] u.LoggerUtil - Verifying the page URL
+2025-04-21 15:58:31 [INFO] u.LoggerUtil - Screenshot saved at: C:\Users\teema\eclipse-workspace\com.car-checking/screenshots/testLoadWebPage_20250421155831.png
+2025-04-21 15:58:31 [INFO] u.LoggerUtil - Screenshot captured for test: testLoadWebPage
+2025-04-21 15:58:31 [INFO] u.LoggerUtil - Ending teardown for class: CarLandingPageTest

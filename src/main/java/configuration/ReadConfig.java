@@ -6,9 +6,6 @@ import utilities.LoggerUtil;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.StandardOpenOption;
 import java.util.Properties;
 
 public class ReadConfig {
@@ -37,22 +34,15 @@ public class ReadConfig {
 
     // Load config.properties file
     private void loadConfig() {
-        try {
-            String rootPath = System.getProperty("user.dir");
-            Path configPath = Path.of(rootPath, "src", "test", "resources", "config", "config.properties");
-
-            // Ensure file exists before reading
-            if (!Files.exists(configPath)) {
-                throw new RuntimeException("Config file not found at: " + configPath);
+        try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream("config/config.properties")) {
+            if (inputStream == null) {
+                throw new RuntimeException("No configuration file provided: config/config.properties not found in classpath");
             }
-
-            // Load properties file
-            try (InputStream inputStream = Files.newInputStream(configPath, StandardOpenOption.READ)) {
-                properties.load(inputStream);
-                logger.info("Configuration file loaded successfully.");
-            }
+            properties.load(inputStream);
+            logger.info("Configuration file loaded successfully from classpath.");
         } catch (IOException e) {
-            logger.error("Failed to load file in class %s and thrown an exception (%s)".formatted(ReadConfig.class.getName(), e));
+            logger.error("Failed to load file in class %s and thrown an exception (%s)"
+                    .formatted(ReadConfig.class.getName(), e));
             throw new RuntimeException("Failed to load config file: " + e.getMessage());
         }
     }
