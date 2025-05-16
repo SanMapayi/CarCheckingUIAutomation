@@ -12,13 +12,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 public final class CarInputAndOutputReader {
-     public static final CarInputAndOutputReader getInstance = new CarInputAndOutputReader();
+    public static final CarInputAndOutputReader getInstance = new CarInputAndOutputReader();
 
-     private CarInputAndOutputReader() {
+    private CarInputAndOutputReader() {
 
-     }
+    }
 
 
     public List<String> getListOfExtractedPlateNumber() {
@@ -34,20 +35,20 @@ public final class CarInputAndOutputReader {
         try {
             carInputContent = Files.readString(filePath);
 
-        // The regex pattern for UK registration plates with or without a space in between.
-        String regexPlateNum = "[A-Z]{2}\\d{1,2}\\s?[A-Z]{3}";
+            // The regex pattern for UK registration plates with or without a space in between.
+            String regexPlateNum = "[A-Z]{2}\\d{1,2}\\s?[A-Z]{3}";
 
-        // Create a Pattern object
-        Pattern pattern = Pattern.compile(regexPlateNum);
+            // Create a Pattern object
+            Pattern pattern = Pattern.compile(regexPlateNum);
 
-        // A matcher object to find the patterns in the content
-        Matcher matcher = pattern.matcher(carInputContent);
+            // A matcher object to find the patterns in the content
+            Matcher matcher = pattern.matcher(carInputContent);
 
-        // Loop through and adding all into a list (vehicle registration plates)
-        while (matcher.find()) {
-            listOfPlateNumbers.add(matcher.group());
+            // Loop through and adding all into a list (vehicle registration plates)
+            while (matcher.find()) {
+                listOfPlateNumbers.add(matcher.group());
 
-        }
+            }
         } catch (IOException e) {
             System.err.println("Error reading file: " + filePath);
             e.printStackTrace();
@@ -58,8 +59,7 @@ public final class CarInputAndOutputReader {
     }
 
 
-
-    public Map<String, List<String>> vehicleRegMakeModelYearFromOutputFile() {
+    public Map<String, List<String>> vehicleRegMakeModelYearFromOutputMap() {
 
         Map<String, List<String>> mapOfVehicleRegMakeModelAndYear = new HashMap<>();
         Path filePath = Constants.CAROUTPUTPATH;  // Replace with your file path
@@ -79,5 +79,33 @@ public final class CarInputAndOutputReader {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public static void deleteTestReports(int numberOfTestReportsToKeep) throws IOException {
+        Path path = Constants.TESTREPORTPATH;
+
+
+        try (var paths = Files.find(path, 1,
+                (p, attr) -> attr.isRegularFile() && p.toString().contains("Test-Report"))) {
+            var setOfTestReports = paths.collect(Collectors.toList());
+            int countFile = setOfTestReports.size();
+
+
+            if (countFile > 5) {
+                final int countFileFinal = countFile - numberOfTestReportsToKeep;
+
+                for (int i = 0; i < countFileFinal; i++) {
+                    Path pathToDeleted = setOfTestReports.get(i);
+                    System.out.println(pathToDeleted);
+                    Files.deleteIfExists(pathToDeleted);
+
+                    LoggerUtil.getLogger().info("{} has been deleted", pathToDeleted);
+                }
+
+            }
+        }
+        catch (IOException ioException) {
+            LoggerUtil.getLogger().info(ioException.getMessage());
+        }
     }
 }

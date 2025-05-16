@@ -51,7 +51,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Apr 21, 2025 03:42:37 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Apr 24, 2025 03:32:39 PM</span>
 				</a>
 			</li>
 			<li>
@@ -129,10 +129,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='28.571%'><span class='strong'>4</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='45.455%'><span class='strong'>5</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='42.857%'>6</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='28.571%'>4</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='9.091%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='45.455%'>5</span> others
 				</div>
 			</div>
 		</div>
@@ -144,10 +144,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='28.571%'><span class='strong'>4</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='45.455%'><span class='strong'>5</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='42.857%'>6</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='28.571%'>4</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='9.091%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='45.455%'>5</span> others
 				</div>
 			</div>
 		</div>
@@ -162,17 +162,51 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>testLoadWebPage</span>
-						<span class='test-time'>Apr 21, 2025 03:42:41 PM</span>
+						<span class='test-time'>Apr 24, 2025 03:32:43 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 24, 2025 03:32:43 PM</span>
+	<span class='label end-time'>Apr 24, 2025 03:32:43 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+2ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:32:43 PM</td>
+					<td class='step-details'><span class='label white-text green'>testLoadWebPage</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>testCompareCarValuationResults</span>
+						<span class='test-time'>Apr 24, 2025 03:32:54 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 21, 2025 03:42:41 PM</span>
-	<span class='label end-time'>Apr 21, 2025 03:42:41 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+	<span class='label start-time'>Apr 24, 2025 03:32:54 PM</span>
+	<span class='label end-time'>Apr 24, 2025 03:32:54 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -186,8 +220,8 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>3:42:41 PM</td>
-					<td class='step-details'><span class='label white-text red'>testLoadWebPage</span></td>
+					<td class='timestamp'>3:32:54 PM</td>
+					<td class='step-details'><span class='label white-text red'>testCompareCarValuationResults</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -196,16 +230,118 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+				<li class='test displayed active  skip' status='skip' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>testCompareCarValuationResults</span>
-						<span class='test-time'>Apr 21, 2025 03:43:18 PM</span>
+						<span class='test-time'>Apr 24, 2025 03:32:54 PM</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 24, 2025 03:32:54 PM</span>
+	<span class='label end-time'>Apr 24, 2025 03:32:54 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='skip'>
+					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+					<td class='timestamp'>3:32:54 PM</td>
+					<td class='step-details'><span class='label white-text orange'>testCompareCarValuationResults</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  skip' status='skip' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>testCompareCarValuationResults</span>
+						<span class='test-time'>Apr 24, 2025 03:32:54 PM</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 24, 2025 03:32:54 PM</span>
+	<span class='label end-time'>Apr 24, 2025 03:32:54 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='skip'>
+					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+					<td class='timestamp'>3:32:54 PM</td>
+					<td class='step-details'><span class='label white-text orange'>testCompareCarValuationResults</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  skip' status='skip' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>testCompareCarValuationResults</span>
+						<span class='test-time'>Apr 24, 2025 03:32:54 PM</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 24, 2025 03:32:54 PM</span>
+	<span class='label end-time'>Apr 24, 2025 03:32:54 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='skip'>
+					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+					<td class='timestamp'>3:32:54 PM</td>
+					<td class='step-details'><span class='label white-text orange'>testCompareCarValuationResults</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>testFileExistsSizeAndReadable</span>
+						<span class='test-time'>Apr 24, 2025 03:32:54 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 21, 2025 03:43:18 PM</span>
-	<span class='label end-time'>Apr 21, 2025 03:43:18 PM</span>
+	<span class='label start-time'>Apr 24, 2025 03:32:54 PM</span>
+	<span class='label end-time'>Apr 24, 2025 03:32:54 PM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 	<div class='test-steps'>
@@ -220,144 +356,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:43:18 PM</td>
-					<td class='step-details'><span class='label white-text green'>testCompareCarValuationResults</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>testCompareCarValuationResults</span>
-						<span class='test-time'>Apr 21, 2025 03:43:22 PM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Apr 21, 2025 03:43:22 PM</span>
-	<span class='label end-time'>Apr 21, 2025 03:43:22 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>3:43:22 PM</td>
-					<td class='step-details'><span class='label white-text red'>testCompareCarValuationResults</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
-					<div class='test-heading'>
-						<span class='test-name'>testCompareCarValuationResults</span>
-						<span class='test-time'>Apr 21, 2025 03:43:27 PM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Apr 21, 2025 03:43:27 PM</span>
-	<span class='label end-time'>Apr 21, 2025 03:43:27 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>3:43:27 PM</td>
-					<td class='step-details'><span class='label white-text red'>testCompareCarValuationResults</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='5'>
-					<div class='test-heading'>
-						<span class='test-name'>testCompareCarValuationResults</span>
-						<span class='test-time'>Apr 21, 2025 03:45:06 PM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Apr 21, 2025 03:45:06 PM</span>
-	<span class='label end-time'>Apr 21, 2025 03:45:06 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>3:45:06 PM</td>
-					<td class='step-details'><span class='label white-text red'>testCompareCarValuationResults</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='6'>
-					<div class='test-heading'>
-						<span class='test-name'>testFileExistsSizeAndReadable</span>
-						<span class='test-time'>Apr 21, 2025 03:45:07 PM</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Apr 21, 2025 03:45:07 PM</span>
-	<span class='label end-time'>Apr 21, 2025 03:45:07 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='skip'>
-					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>3:45:07 PM</td>
-					<td class='step-details'><span class='label white-text orange'>testFileExistsSizeAndReadable</span></td>
+					<td class='timestamp'>3:32:54 PM</td>
+					<td class='step-details'><span class='label white-text green'>testFileExistsSizeAndReadable</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -368,48 +368,14 @@
 				
 				<li class='test displayed active  skip' status='skip' bdd='false' test-id='7'>
 					<div class='test-heading'>
-						<span class='test-name'>testValidateFileContentFormat</span>
-						<span class='test-time'>Apr 21, 2025 03:45:07 PM</span>
+						<span class='test-name'>testExtractRegistrationNumbers</span>
+						<span class='test-time'>Apr 24, 2025 03:32:56 PM</span>
 						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 21, 2025 03:45:07 PM</span>
-	<span class='label end-time'>Apr 21, 2025 03:45:07 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='skip'>
-					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>3:45:07 PM</td>
-					<td class='step-details'><span class='label white-text orange'>testValidateFileContentFormat</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='8'>
-					<div class='test-heading'>
-						<span class='test-name'>testCheckForDuplicates</span>
-						<span class='test-time'>Apr 21, 2025 03:45:07 PM</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Apr 21, 2025 03:45:07 PM</span>
-	<span class='label end-time'>Apr 21, 2025 03:45:07 PM</span>
+	<span class='label start-time'>Apr 24, 2025 03:32:56 PM</span>
+	<span class='label end-time'>Apr 24, 2025 03:32:56 PM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 	<div class='test-steps'>
@@ -424,8 +390,42 @@
 			<tbody>
 				<tr class='log' status='skip'>
 					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>3:45:07 PM</td>
-					<td class='step-details'><span class='label white-text orange'>testCheckForDuplicates</span></td>
+					<td class='timestamp'>3:32:56 PM</td>
+					<td class='step-details'><span class='label white-text orange'>testExtractRegistrationNumbers</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>testValidateFileContentFormat</span>
+						<span class='test-time'>Apr 24, 2025 03:32:56 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 24, 2025 03:32:56 PM</span>
+	<span class='label end-time'>Apr 24, 2025 03:32:56 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>3:32:56 PM</td>
+					<td class='step-details'><span class='label white-text green'>testValidateFileContentFormat</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -436,14 +436,14 @@
 				
 				<li class='test displayed active  skip' status='skip' bdd='false' test-id='9'>
 					<div class='test-heading'>
-						<span class='test-name'>testExtractedRegistrationNumbers</span>
-						<span class='test-time'>Apr 21, 2025 03:45:07 PM</span>
+						<span class='test-name'>testEnterPlateNumberInCarValuationPage</span>
+						<span class='test-time'>Apr 24, 2025 03:32:56 PM</span>
 						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 21, 2025 03:45:07 PM</span>
-	<span class='label end-time'>Apr 21, 2025 03:45:07 PM</span>
+	<span class='label start-time'>Apr 24, 2025 03:32:56 PM</span>
+	<span class='label end-time'>Apr 24, 2025 03:32:56 PM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 	<div class='test-steps'>
@@ -458,8 +458,8 @@
 			<tbody>
 				<tr class='log' status='skip'>
 					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>3:45:07 PM</td>
-					<td class='step-details'><span class='label white-text orange'>testExtractedRegistrationNumbers</span></td>
+					<td class='timestamp'>3:32:56 PM</td>
+					<td class='step-details'><span class='label white-text orange'>testEnterPlateNumberInCarValuationPage</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -470,14 +470,14 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
 					<div class='test-heading'>
-						<span class='test-name'>testExtractRegistrationNumbers</span>
-						<span class='test-time'>Apr 21, 2025 03:45:07 PM</span>
+						<span class='test-name'>testCheckForDuplicates</span>
+						<span class='test-time'>Apr 24, 2025 03:32:56 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 21, 2025 03:45:07 PM</span>
-	<span class='label end-time'>Apr 21, 2025 03:45:07 PM</span>
+	<span class='label start-time'>Apr 24, 2025 03:32:56 PM</span>
+	<span class='label end-time'>Apr 24, 2025 03:32:56 PM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 	<div class='test-steps'>
@@ -492,8 +492,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:45:07 PM</td>
-					<td class='step-details'><span class='label white-text green'>testExtractRegistrationNumbers</span></td>
+					<td class='timestamp'>3:32:56 PM</td>
+					<td class='step-details'><span class='label white-text green'>testCheckForDuplicates</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -504,14 +504,14 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
 					<div class='test-heading'>
-						<span class='test-name'>testEnterPlateNumberInCarValuationPage</span>
-						<span class='test-time'>Apr 21, 2025 03:45:27 PM</span>
+						<span class='test-name'>testExtractedRegistrationNumbers</span>
+						<span class='test-time'>Apr 24, 2025 03:32:56 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 21, 2025 03:45:27 PM</span>
-	<span class='label end-time'>Apr 21, 2025 03:45:27 PM</span>
+	<span class='label start-time'>Apr 24, 2025 03:32:56 PM</span>
+	<span class='label end-time'>Apr 24, 2025 03:32:56 PM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 	<div class='test-steps'>
@@ -526,110 +526,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:45:27 PM</td>
-					<td class='step-details'><span class='label white-text green'>testEnterPlateNumberInCarValuationPage</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='12'>
-					<div class='test-heading'>
-						<span class='test-name'>testEnterPlateNumberInCarValuationPage</span>
-						<span class='test-time'>Apr 21, 2025 03:45:47 PM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Apr 21, 2025 03:45:47 PM</span>
-	<span class='label end-time'>Apr 21, 2025 03:45:47 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>3:45:47 PM</td>
-					<td class='step-details'><span class='label white-text red'>testEnterPlateNumberInCarValuationPage</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
-					<div class='test-heading'>
-						<span class='test-name'>testEnterPlateNumberInCarValuationPage</span>
-						<span class='test-time'>Apr 21, 2025 03:46:07 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Apr 21, 2025 03:46:07 PM</span>
-	<span class='label end-time'>Apr 21, 2025 03:46:07 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:46:07 PM</td>
-					<td class='step-details'><span class='label white-text green'>testEnterPlateNumberInCarValuationPage</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='14'>
-					<div class='test-heading'>
-						<span class='test-name'>testEnterPlateNumberInCarValuationPage</span>
-						<span class='test-time'>Apr 21, 2025 03:46:45 PM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Apr 21, 2025 03:46:45 PM</span>
-	<span class='label end-time'>Apr 21, 2025 03:46:45 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>3:46:45 PM</td>
-					<td class='step-details'><span class='label white-text red'>testEnterPlateNumberInCarValuationPage</span></td>
+					<td class='timestamp'>3:32:56 PM</td>
+					<td class='step-details'><span class='label white-text green'>testExtractedRegistrationNumbers</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -671,31 +569,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>14</div>
+					<div class='panel-lead'>11</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>14</div>
+					<div class='panel-lead'>11</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Apr 21, 2025 03:42:37 PM</div>
+					<div class='panel-lead'>Apr 24, 2025 03:32:39 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Apr 21, 2025 03:46:45 PM</div>
+			 		<div class='panel-lead'>Apr 24, 2025 03:32:56 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>247,893ms</div>
+					<div class='panel-lead'>17,394ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -732,22 +630,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 4,
-				failParent: 6,
+				passParent: 5,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 4,
-				exceptionsParent: 10,
+				skipParent: 5,
+				exceptionsParent: 6,
 				
-				passChild: 4,
-				failChild: 6,
+				passChild: 5,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 4,
+				skipChild: 5,
 				infoChild: 0,
-				exceptionsChild: 10,
+				exceptionsChild: 6,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

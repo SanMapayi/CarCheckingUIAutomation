@@ -18,5 +18,6 @@ COPY wait-for-grid.sh /usr/bin/wait-for-grid.sh
 RUN chmod +x /usr/bin/wait-for-grid.sh
 
 # Set default command to wait then run tests
-ENTRYPOINT ["/usr/bin/wait-for-grid.sh"]
-CMD ["java", "-cp", "CarCheckingTest.jar:CarCheckingTest-tests.jar:libs/*", "org.testng.TestNG", "-verbose", "10", "testng.xml"]
+ADD wait-for-grid.sh .
+ENTRYPOINT sh wait-for-grid.sh
+#CMD ["java", "-cp", "CarCheckingTest.jar:CarCheckingTest-tests.jar:libs/*", "org.testng.TestNG", "-verbose", "10", "testng.xml"]
