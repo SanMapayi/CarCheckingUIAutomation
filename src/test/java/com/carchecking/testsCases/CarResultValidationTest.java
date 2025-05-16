@@ -34,7 +34,7 @@ public class CarResultValidationTest extends TestBase implements ITestLifecycleB
 
         // Ensure we are on the home page before starting
         driver.get(config.getUrl());
-        logger.info("Navigated to home page");
+        logger.info("Navigated to the home page");
 
         // Enter registration number and click the check button
         carCheckingHomePage.enterRegNumber(regNumber);

@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="car checking automation test">
+<suite name="car checking automation test" parallel="tests" thread-count="10">
     <!-- Reporting listener for generating Extent Reports -->
     <listeners>
         <listener class-name="reports.Reporting"/>
     </listeners>
-
-    <test name="car checking test">
+    <test name="car checking chrome test">
+        <parameter name="browser" value="chrome"></parameter>
+        <!-- Test classes to be executed -->
+        <classes>
+            <class name="com.carchecking.testsCases.CarLandingPageTest"/>
+            <class name="com.carchecking.testsCases.CarOutputComparisonTest"/>
+            <class name="com.carchecking.testsCases.CarRegValidationTest"/>
+            <class name="com.carchecking.testsCases.CarResultValidationTest"/>
+        </classes>
+    </test>
+    <test name="car checking firfox test">
+        <parameter name="browser" value="firefox"></parameter>
         <!-- Test classes to be executed -->
         <classes>
             <class name="com.carchecking.testsCases.CarLandingPageTest"/>

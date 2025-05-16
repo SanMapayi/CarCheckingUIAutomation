@@ -23,26 +23,23 @@ public class CarOutputComparisonTest extends TestBase implements ITestLifecycleB
     public void testCompareCarValuationResults(String regNumber) throws IOException, InterruptedException {
         carCheckingHomePage = new CarCheckingHomePage();
         carOutputComparisonPage = new CarOutputComparisonPage();
-        mapOfExpectedResultOutput = CarInputAndOutputReader.getInstance.vehicleRegMakeModelYearFromOutputFile();
+        mapOfExpectedResultOutput = CarInputAndOutputReader.getInstance.vehicleRegMakeModelYearFromOutputMap();
         logger.info("Starting test for vehicle registration: " + regNumber);
 
         // Ensure we are on the home page before starting
         driver.get(config.getUrl());
-        logger.info("Navigated to home page in [{}]", Thread.currentThread().getStackTrace()[1].getMethodName());
+        logger.info("Navigated to home page in test [{}], and testing for '{}'", Thread.currentThread().getStackTrace()[1].getMethodName(), regNumber);
 
         // Check if output file contains reg number from the input file
         carOutputComparisonPage.checkIfMapContainsKeys(regNumber, mapOfExpectedResultOutput);
 
-        // Check and assert if reg number coming as input is present in the output file.
         // And then return the list of expected values from the output file (Make, Model, year)
         List<String> expectedDetails = carOutputComparisonPage.getAndCheckIfRegNumberIsPresent(mapOfExpectedResultOutput, regNumber);
 
         // Enter reg number & search
-        carOutputComparisonPage.enterRegAndSearchPage(
-                regNumber, carCheckingHomePage, carOutputComparisonPage
-        );
+        carOutputComparisonPage.enterRegAndSearchPage(regNumber, carCheckingHomePage, carOutputComparisonPage);
 
-        // Fetching actual values from website using JS and asserting for make, model, and year
+        // Fetching actual values from website using JS and asserting for make, model, and year and compare with expected values
         carOutputComparisonPage.fetchingExpectedValueAndValidationTest(carOutputComparisonPage, expectedDetails.get(0),
                 expectedDetails.get(1), expectedDetails.get(2), regNumber);
     }
